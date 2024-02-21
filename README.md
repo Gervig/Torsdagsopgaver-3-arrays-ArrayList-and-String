@@ -1,2 +1,4 @@
 # Torsdagsopgave 3: arrays, ArrayList and String
- Torsdags opgaver uge 4
+
+Casper Gervig
+cph-cg201@cphbusiness.dk
