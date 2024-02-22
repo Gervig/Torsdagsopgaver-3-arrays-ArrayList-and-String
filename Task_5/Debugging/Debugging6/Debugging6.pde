@@ -17,5 +17,5 @@ boolean isJobDone()
 
 int getRandomNumber(int min, int max)
 {
-  return (int)random(min, max);
+  return (int)random(min, max); // return skulle castes til integers
 }

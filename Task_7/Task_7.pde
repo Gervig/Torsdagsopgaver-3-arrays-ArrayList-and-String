@@ -7,23 +7,25 @@ ArrayList<Boolean> myBoolList = new ArrayList<>();
 //  7.b
 void myStringMethod(ArrayList<String> listToPrint) {
   for (int i = 0; i < listToPrint.size(); i++) {
-    println(listToPrint.get(i));
-  }
+    println(listToPrint.get(i));  // .get henter værdien på index (i)
+  }                                // for vores arraylist
 }
 
 //  7.c
 int mySumIntMethod(ArrayList<Integer> listToPrint) {
   int sum = 0;
   for (int i = 0; i < listToPrint.size(); i++) {
-    sum += myIntList.get(i);
+    sum += listToPrint.get(i);
   }
   return sum;
-}int myAverageIntMethod(ArrayList<Integer> listToPrint) {
+}
+
+float myAverageIntMethod(ArrayList<Integer> listToPrint) {
   int sum = 0;
   for (int i = 0; i < listToPrint.size(); i++) {
     sum += myIntList.get(i);
   }
-  return sum / listToPrint.size();
+  return (float)sum / listToPrint.size();
 }
 
 void setup(){
@@ -31,7 +33,7 @@ void setup(){
   myStringList.add("String2");
   myStringMethod(myStringList);
   myIntList.add(10);
-  myIntList.add(20);
+  myIntList.add(11);
   println(mySumIntMethod(myIntList));
   println(myAverageIntMethod(myIntList));
 }

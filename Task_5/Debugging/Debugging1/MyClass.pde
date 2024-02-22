@@ -1,3 +1,4 @@
+//slettede ()
 public class MyClass {  //class start
     
     public MyClass(){  // constructor start

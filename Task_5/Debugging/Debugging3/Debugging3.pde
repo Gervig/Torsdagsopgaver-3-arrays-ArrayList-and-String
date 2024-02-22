@@ -8,7 +8,7 @@ void setup()
     }
 }
 
-boolean isJobDone()
+boolean isJobDone()  //return type boolean, ikke void
 {
-    return true;
+    return true;  //return true, ikke jobsDone
 }

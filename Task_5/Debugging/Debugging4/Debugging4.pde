@@ -2,7 +2,7 @@ boolean jobsDone = true;
 
 void setup()
 {
-  if (isJobDone())
+  if (isJobDone()) //manglede (), da vi kalder på en funktion
   {
     println("Job's done!");
   }

@@ -16,8 +16,9 @@ boolean isValueGreaterThanThreshold(int value, int threshold)
   if (value > threshold)
   {
     return true;
-  } else
-  return false;
+  } else {            //manglede else der kunne returne false
+    return false;
+  }
 }
 
 boolean isJobDone()

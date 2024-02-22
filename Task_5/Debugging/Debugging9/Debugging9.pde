@@ -19,9 +19,9 @@ boolean isJobDone()
 int getSumOfAllElementsInArray(int[] arr)
 {
   int sum = 0;
-  for (int i = 0; i < arr.length; i++)
-  {
-    sum += arr[i];
+  for (int i = 0; i < arr.length; i++)  //ændrer <= til <, hvis i = arr.length
+  {                                     // så vil den sidste værdi værre udenfor
+    sum += arr[i];                      // array, det er en off-by one fejl
   }
   return sum;
 }
