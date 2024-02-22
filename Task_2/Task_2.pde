@@ -2,7 +2,7 @@
 
 void setup() {
   printPartOfWord("København", 0, 3);
-  printLastFour("Hej");
+  printLastFour("København");
 }
 
 void printPartOfWord(String str, int start, int end) {

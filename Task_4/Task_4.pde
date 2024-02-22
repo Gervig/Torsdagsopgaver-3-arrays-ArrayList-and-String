@@ -7,9 +7,9 @@ void setup() {
   //sq1.display();
   //  4.i + 4.j
   for (int i = 0; i < squares.length; i++) {
-    squares[i] = new Square(i * 45 + 25, i * 45 + 25);
+    squares[i] = new Square(i * 45, i * 45);
     squares[i].display();
-    println("Square "+ (i+1) + " at (" + (i*45+25) + ", " + (i*45+25) + ")");
+    println("Square "+ (i+1) + " at (" + (i*45) + ", " + (i*45) + ")");
   }
 }
 

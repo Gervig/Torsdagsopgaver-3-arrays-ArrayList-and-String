@@ -12,7 +12,6 @@ class Square {  //  class start
 
   //  4.f
   void display() {
-    rectMode(CENTER);
     rect(xpos, ypos, width/12, height/12);
   }
 }  // class close
