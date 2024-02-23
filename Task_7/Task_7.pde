@@ -1,13 +1,14 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 //  7.a
-ArrayList<Integer> myIntList = new ArrayList<>();
-ArrayList<String> myStringList = new ArrayList<>();
+ArrayList<Integer> myIntList = new ArrayList<>(Arrays.asList(1,2,3));
+ArrayList<String> myStringList = new ArrayList<>(Arrays.asList("String1"));
 ArrayList<Boolean> myBoolList = new ArrayList<>();
 
 //  7.b
 void myStringMethod(ArrayList<String> listToPrint) {
   for (int i = 0; i < listToPrint.size(); i++) {
-    println(listToPrint.get(i));  // .get henter værdien på index (i)
+    println(listToPrint.get(i));    // .get henter værdien på index (i)
   }                                // for vores arraylist
 }
 
@@ -28,12 +29,16 @@ float myAverageIntMethod(ArrayList<Integer> listToPrint) {
   return (float)sum / listToPrint.size();
 }
 
-void setup(){
-  myStringList.add("String1");
-  myStringList.add("String2");
+void setup() {
+
+  //  Strings
+  myStringList.addAll(Arrays.asList("String2", "String3"));
   myStringMethod(myStringList);
-  myIntList.add(10);
-  myIntList.add(11);
+
+  //  Integers sum
+  myIntList.addAll(Arrays.asList(10, 11));
   println(mySumIntMethod(myIntList));
+
+  //  Integers average
   println(myAverageIntMethod(myIntList));
 }

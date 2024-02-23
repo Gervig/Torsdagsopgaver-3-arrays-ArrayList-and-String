@@ -5,11 +5,15 @@ void setup() {
   //Square sq1 = new Square(100,100);
   //  4.g
   //sq1.display();
+}
+
+void draw(){
   //  4.i + 4.j
   for (int i = 0; i < squares.length; i++) {
-    squares[i] = new Square(i * 45, i * 45);
+    squares[i] = new Square(i * 45, i * 45, 10);
+    //squares[i].move();
     squares[i].display();
-    println("Square "+ (i+1) + " at (" + (i*45) + ", " + (i*45) + ")");
+    //println("Square "+ (i+1) + " at (" + (i*45) + ", " + (i*45) + ")");
   }
 }
 

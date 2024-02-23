@@ -7,11 +7,7 @@ void setup() {
   size(321, 321);
   for (int i = 0; i < 8; i++) {
     for ( int j = 0; j < 8; j++) {
-      if (i % 2 == 0) {
-        board[i][j] = j % 2;
-      } else {
-        board[i][j] = (j +1) % 2;
-      }
+      board[i][j] = (i + j) % 2;
     }
   }
   for (int i = 0; i < board.length; i++) {

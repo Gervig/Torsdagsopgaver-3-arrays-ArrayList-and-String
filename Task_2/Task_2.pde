@@ -6,18 +6,28 @@ void setup() {
 }
 
 void printPartOfWord(String str, int start, int end) {
-  if (start < 0) {
-    println("error: start index is less than zero");
-  } else if (start > str.length()) {
-    println("error: start index is higher than the string length");
-  } else if (end < start) {
-    println("error: end index is higher than start index");
-  } else if (end > str.length()) {
-    println("error: end index is higher than the string length");
-  } else {
+  if (start >= 0 && end <= str.length()-1 && start < end) {
     println(str.substring(start, end));
+  } else {
+    println("Error: Invalid input");
   }
 }
+
+
+//void printPartOfWord(String str, int start, int end) {
+//  if (start < 0) {
+//    println("error: start index is less than zero");
+//  } else if (start > str.length()) {
+//    println("error: start index is higher than the string length");
+//  } else if (end < start) {
+//    println("error: end index is higher than start index");
+//  } else if (end > str.length()) {
+//    println("error: end index is higher than the string length");
+//  } else {
+//    println(str.substring(start, end));
+//  }
+//}
+
 void printLastFour(String str) {
   if (str.length()-4 <= 0) {
     println("Error: String length is less than or equals to 4");
